@@ -13,17 +13,9 @@ public interface ShuflrClient {
 
     public Integer getAccountBalance(final String walletType);
 
-    public String getMessageCorrelationId();
+    public boolean debitWallet(final int amount, final String walletType) throws InsufficientFundsException, AuthenticationRequiredException;
 
-    public void setPlayerFeedMessage(String text);
+    public boolean creditWallet(final int amount, final String walletType) throws AuthenticationRequiredException;
 
-    public boolean debitWallet(final int amount, final int walletType) throws InsufficientFundsException, AuthenticationRequiredException;
 
-    public boolean creditWallet(final int amount, final int walletType) throws AuthenticationRequiredException;
-
-    abstract class WalletType {
-
-        public static final int SHUFLR = 1;
-        public static final int OTHER = 2;
-    }
 }

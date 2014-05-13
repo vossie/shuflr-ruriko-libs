@@ -13,8 +13,6 @@ public interface InterceptorMessageIn {
 
     public String requestURL();
 
-    public String requestQueryString();
-
     public String requestBody();
 
     public String httpRequestMethod();

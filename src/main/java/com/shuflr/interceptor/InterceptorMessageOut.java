@@ -13,5 +13,4 @@ public interface InterceptorMessageOut extends InterceptorMessageIn {
 
     public String responseContentType();
 
-    public InterceptorMessageOut setContentType(String mimeType);
 }
