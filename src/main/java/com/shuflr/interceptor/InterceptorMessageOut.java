@@ -5,12 +5,20 @@ package com.shuflr.interceptor;
  * All rights reserved. No warranty, explicit or implicit, provided.
  * Created: 12/08/2013 18:36 by carel
  */
-public interface InterceptorMessageOut extends InterceptorMessageIn {
+public abstract class InterceptorMessageOut {
 
-    public Integer responseHttpStatusCode();
+    public InterceptorMessageOut(InterceptorMessageIn messageIn, Integer responseHttpStatusCode, String responseBody, String responseContentType) {
+        this.messageIn = messageIn;
+        this.responseHttpStatusCode = responseHttpStatusCode;
+        this.responseBody = responseBody;
+        this.responseContentType = responseContentType;
+    }
 
-    public String responseBody();
+    public final InterceptorMessageIn messageIn;
 
-    public String responseContentType();
+    public final Integer responseHttpStatusCode;
 
+    public final String responseBody;
+
+    public final String responseContentType;
 }
