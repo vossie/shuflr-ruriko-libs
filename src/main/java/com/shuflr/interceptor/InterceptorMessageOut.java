@@ -5,7 +5,7 @@ package com.shuflr.interceptor;
  * All rights reserved. No warranty, explicit or implicit, provided.
  * Created: 12/08/2013 18:36 by carel
  */
-public abstract class InterceptorMessageOut {
+public class InterceptorMessageOut {
 
     public InterceptorMessageOut(InterceptorMessageIn messageIn, Integer responseHttpStatusCode, String responseBody, String responseContentType) {
         this.messageIn = messageIn;

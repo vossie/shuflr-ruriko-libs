@@ -39,7 +39,7 @@ public abstract class ShuflrHttpInterceptor {
      * @param messageOut
      * @throws InterceptorException
      */
-    public abstract void messageOut(InterceptorMessageOut messageOut) throws InterceptorException;
+    public abstract InterceptorMessageOut messageOut(InterceptorMessageOut messageOut) throws InterceptorException;
 
     /**
      * Invoked if an exception occurred in the servlet and a valid response was not received from the servlet.

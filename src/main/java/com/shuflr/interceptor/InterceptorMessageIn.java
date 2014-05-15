@@ -9,7 +9,7 @@ import java.util.Map;
  * All rights reserved. No warranty, explicit or implicit, provided.
  * Created: 12/08/2013 18:36 by carel
  */
-public final class InterceptorMessageIn {
+public class InterceptorMessageIn {
 
     public InterceptorMessageIn(ShuflrClient client, String requestURL, String requestBody, String httpRequestMethod, String requestContentType, Map<String, String[]> requestParams, Map<String, String[]> headerParam) {
         this.client = client;
