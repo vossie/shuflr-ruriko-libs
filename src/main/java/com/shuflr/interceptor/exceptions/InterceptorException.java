@@ -1,4 +1,4 @@
-package com.shuflr.interceptor;
+package com.shuflr.interceptor.exceptions;
 
 /**
  * Copyright (c) 2013 Carel Vosloo <code@bronzegate.com>

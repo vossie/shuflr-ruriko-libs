@@ -6,13 +6,23 @@
     <name>Common libraries used by Ruriko</name>
     <groupId>com.shuflr.libs</groupId>
     <artifactId>shuflr-ruriko-libs</artifactId>
-    <version>0.12-SNAPSHOT</version>
+    <version>0.13-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
         <java.version>1.7</java.version>
         <maven.compiler.plugin.version>2.3.2</maven.compiler.plugin.version>
+        <fasterxml.jackson-databind>2.3.0</fasterxml.jackson-databind>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${fasterxml.jackson-databind}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

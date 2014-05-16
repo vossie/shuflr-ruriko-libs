@@ -1,13 +1,13 @@
-package com.shuflr.interceptor;
+package com.shuflr.interceptor.exceptions;
 
 /**
  * Copyright (c) 2013 Carel Vosloo <code@bronzegate.com>
  * All rights reserved. No warranty, explicit or implicit, provided.
  * Created: 07/08/2013 15:49 by carel
  */
-public class InsufficientFundsException extends InterceptorException{
+public class AuthenticationRequiredException extends InterceptorException{
 
-    public InsufficientFundsException(String message) {
+    public AuthenticationRequiredException(String message) {
         super(message);
     }
 }

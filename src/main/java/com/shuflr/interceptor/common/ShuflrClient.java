@@ -1,4 +1,7 @@
-package com.shuflr.interceptor;
+package com.shuflr.interceptor.common;
+
+import com.shuflr.interceptor.exceptions.AuthenticationRequiredException;
+import com.shuflr.interceptor.exceptions.InsufficientFundsException;
 
 /**
  * Copyright (c) 2013 Carel Vosloo <code@bronzegate.com>
