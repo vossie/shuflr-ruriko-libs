@@ -11,14 +11,14 @@ import java.util.Map;
  */
 public class InterceptorMessageIn {
 
-    public InterceptorMessageIn(ShuflrClient client, String requestURL, String requestBody, String httpRequestMethod, String requestContentType, Map<String, String[]> requestParams, Map<String, String[]> headerParam) {
+    public InterceptorMessageIn(ShuflrClient client, String requestURL, String requestBody, String httpRequestMethod, String requestContentType, Map<String, String[]> requestParams, Map<String, String[]> headerParams) {
         this.client = client;
         this.requestURL = requestURL;
         this.requestBody = requestBody;
         this.httpRequestMethod = httpRequestMethod;
         this.requestContentType = requestContentType;
         this.requestParams = requestParams;
-        this.headerParam = headerParam;
+        this.headerParams = headerParams;
     }
 
     public final ShuflrClient client;
@@ -33,5 +33,5 @@ public class InterceptorMessageIn {
 
     public final Map<String, String[]> requestParams;
 
-    public final Map<String, String[]> headerParam;
+    public final Map<String, String[]> headerParams;
 }
